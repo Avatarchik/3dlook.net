@@ -113,7 +113,8 @@ $(document).ready(function() {
 /*EXPAND BAR INIT*/
 $(document).ready(function() {
 
-    var gridItemsCont = $(".gridItems").children(".item").length;
+    var gridItemsCont = $(".work").find(".item").length + $(".blog").find(".item").length;
+
     var c = $(".barItem").length / gridItemsCont;
     var KD = 50;
 
