@@ -231,6 +231,7 @@ Vue.use(VueRouter)
 var router = new VueRouter({
    history: false,
    hashbang:true,
+   // saveScrollPosition:true,
    root: '/'
 })
 
@@ -315,9 +316,7 @@ router.map({
   },
 
 
-   '/admin': {
-      component: contactComponent
-   },
+
 });
 
 

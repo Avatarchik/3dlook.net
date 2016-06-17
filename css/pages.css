@@ -13,6 +13,8 @@ ul li img h3{
     list-style: none;
 }
 
+
+
 body{
 	font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 }
@@ -26,6 +28,14 @@ header img {
     margin-top: 100px;
 }
 
+
+h5{
+    line-height: 50px;
+}
+
+
+
+
 .pageTitle {
     position: relative;
     width: 100%;
@@ -35,7 +45,7 @@ header img {
     background-color: #E6003F;
     text-align: center;
     z-index: 100;
-    background-image: url(../../../img/bg/pattern.png);
+    background-image: url(../../../img/bg/pattern.png);    
 }
 .pageTitle p{
     font-size: 16px;
@@ -222,6 +232,7 @@ article .linkBtn a{
 .pageGrids ul li{
     display: inline-block;
     margin-bottom: 2em;
+        /*float: left;*/
 }
 
 
@@ -237,7 +248,46 @@ article .linkBtn a{
 
 
 
+.shares{
+    position: absolute;
+    width: 100%;
+    max-width: 320px;
+    height: 32px;
+    left: 0;
+    right: 0;
+    top: 288px;
+    margin: 0 auto;
+    /*background-color: #517E96;*/
+}
 
+.shareBtn{
+    width: 19%;
+    display: inline-block;
+    /*background-color: #748803;*/
+}
+
+.shareBtn .shareLink {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: inline-block;
+    float: none;
+    position: relative;
+    color: #ccc;
+    display: block;
+    text-indent: 0;
+    background-color: rgba(0,0,0,0.3);
+    background-image: none;
+}
+
+.shareBtn .shareLink:hover {
+    background-color: rgba(255,255,255,0.7);
+    transition: 0.8s;
+}
 
 
 
@@ -254,4 +304,9 @@ article .linkBtn a{
 }
 .pageGrids .gridW100{
     width: 100%;
+}
+
+
+.pageGrids .gridW50 ul li{
+    float: left;
 }

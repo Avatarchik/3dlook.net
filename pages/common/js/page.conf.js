@@ -17,6 +17,7 @@ var jspath = [
 
 var slinkyJS = [
 "../../incude/slinky/js/slinky.js",
+"../common/js/share.js",
 ]
 
 
@@ -68,7 +69,7 @@ window.onload = function() {
 
     
     // FIX IMG PATH
-    var findImg = $("body").find("img");
+    var findImg = $(".pageCont").find("img");
 
      findImg.each(function(index,img){
 
@@ -80,10 +81,13 @@ window.onload = function() {
         $(img).attr("src",fixPath);  
       });
 
+
+
     for (var i = 0; i < slinkyJS.length; i++) {  
 
         loadjscssfile(slinkyJS[i], "js", "head");
     };
+
 
 
 } 
